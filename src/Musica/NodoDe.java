@@ -1,34 +1,35 @@
 package Musica;
 
 public class NodoDe {
-	private int id_cancion;
-	private String album;
-	private String artista;
-	private String genero;
-	public int getId_cancion() {
-		return id_cancion;
+	private musica valor;
+	private NodoDe siguiente;
+	private NodoDe anterior;
+
+	public NodoDe(musica val, NodoDe next,NodoDe back) {
+		siguiente=next;
+		anterior=back;
+		valor=val;
 	}
-	public void setId_cancion(int id_cancion) {
-		this.id_cancion = id_cancion;
+
+
+	public musica getValor() {
+		return valor;
 	}
-	public String getAlbum() {
-		return album;
+	public void setValor(musica valor) {
+		this.valor = valor;
 	}
-	public void setAlbum(String album) {
-		this.album = album;
+	public NodoDe getSiguiente() {
+		return siguiente;
 	}
-	public String getArtista() {
-		return artista;
+	public void setSiguiente(NodoDe siguiente) {
+		this.siguiente = siguiente;
 	}
-	public void setArtista(String artista) {
-		this.artista = artista;
+	public NodoDe getAnterior() {
+		return anterior;
 	}
-	public String getGenero() {
-		return genero;
+	public void setAnterior(NodoDe anterior) {
+		this.anterior = anterior;
 	}
-	public void setGenero(String genero) {
-		this.genero = genero;
-	}
-	
+
 
 }
