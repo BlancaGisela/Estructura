@@ -71,33 +71,33 @@ public class ListaDe {
 	}
 
 	public StringBuilder verprimero() {
-	StringBuilder cadena = new StringBuilder();
-	NodoDe temp=inicio;
-	cadena.append("");
-	while(temp!=null) {
-		cadena.append(temp.getValor());
+		StringBuilder cadena = new StringBuilder();
+		NodoDe temp=inicio;
 		cadena.append("");
-		temp=temp.getSiguiente();
+		while(temp!=null) {
+			cadena.append(temp.getValor());
+			cadena.append("");
+			temp=temp.getSiguiente();
 
-	}
-	cadena.append("");
-	return cadena;
-}
-
-
-public StringBuilder verultimo() {
-	StringBuilder cadena = new StringBuilder();
-	NodoDe temp=fin;
-	cadena.append("");
-	while(temp!=null) {
-		cadena.append(temp.getValor());
+		}
 		cadena.append("");
-		temp=temp.getAnterior();
-
+		return cadena;
 	}
-	cadena.append("");
-	return cadena;
-}
+
+
+	public StringBuilder verultimo() {
+		StringBuilder cadena = new StringBuilder();
+		NodoDe temp=fin;
+		cadena.append("");
+		while(temp!=null) {
+			cadena.append(temp.getValor());
+			cadena.append("");
+			temp=temp.getAnterior();
+
+		}
+		cadena.append("");
+		return cadena;
+	}
 
 }
 
