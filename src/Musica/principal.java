@@ -170,6 +170,10 @@ public class principal extends JFrame {
 		btnRecorridoAdelante.setForeground(Color.BLACK);
 		btnRecorridoAdelante.setBounds(276, 164, 147, 23);
 		btnRecorridoAdelante.addMouseListener(new MouseAdapter() {
+				public void mouseClicked(MouseEvent e) {
+
+			JOptionPane.showMessageDialog(null, ld.verprimero().toString());
+		}
 			
 		
 		});
@@ -179,6 +183,12 @@ public class principal extends JFrame {
 		btnRecorridoAtras.setForeground(Color.BLACK);
 		btnRecorridoAtras.setBounds(276, 198, 147, 23);
 		btnRecorridoAtras.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+
+
+			JOptionPane.showMessageDialog(null, ld.verultimo().toString());
+
+		}
 			
 			
 		});
